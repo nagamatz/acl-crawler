@@ -5,6 +5,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
 ## [Unreleased] - 2022-06-04
+### Changed
+- README.md : Added short usage text
+
 ### Fixed
 - ac.py : Added the output of index #s (Excel seems unable to correctly import
 CSV files that don't have indices)
