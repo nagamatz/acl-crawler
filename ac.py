@@ -98,7 +98,8 @@ def ExtractPapers(html: str) -> pandas.DataFrame:
             "bib": series_bib,
             "sw": series_sw,
             "code": series_code,
-        }
+        },
+        index=range(1, len(series_title) + 1),
     )
     return df
 
@@ -129,4 +130,4 @@ Example:
             with open(args.save, "wt") as f:
                 f.write(html)
     df = ExtractPapers(html)
-    df.to_csv(sys.stdout, index=False)
+    df.to_csv(sys.stdout)
